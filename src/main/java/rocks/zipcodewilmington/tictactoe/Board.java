@@ -99,7 +99,15 @@ public class Board {
     }
 
     public String getWinner() {
-        return null;
+
+        if (isInFavorOfX() == true) {
+            return "X";
+        }
+
+        if (isInFavorOfO() == true) {
+            return "O";
+        }
+        return "";
     }
 
 }
